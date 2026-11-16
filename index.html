@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Njenga Kariuki</title>
+<meta name="description" content="Contact card: save to your phone, LinkedIn.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://njenga.ai/hi/">
+<meta property="og:title" content="Njenga Kariuki">
+<meta property="og:description" content="Contact card: save to your phone, LinkedIn.">
+<meta property="og:image" content="https://njenga.ai/og/home.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="chivo-300-600.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* The contact page of njenga.ai. It uses the site's system: paper, ink, one warm gray; Chivo; the site's one button.
+   It is self-contained on purpose: it loads nothing from the main site's stylesheet or script, and no third-party code. */
+@font-face{font-family:"Chivo";src:url("chivo-300-600.woff2") format("woff2");font-weight:300 600;font-style:normal;font-display:swap}
+:root{color-scheme:light;--paper:#fff;--ink:#0b0b0a;--ink-2:#46453f;--gray:#6b6a64;
+--font:"Chivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+--gut:max(16px,env(safe-area-inset-left,0px));--gut-r:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:600px){:root{--gut:max(32px,env(safe-area-inset-left,0px));--gut-r:max(32px,env(safe-area-inset-right,0px))}}
+@media (min-width:1000px){:root{--gut:max(56px,env(safe-area-inset-left,0px));--gut-r:max(56px,env(safe-area-inset-right,0px))}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--font);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+h1,p{margin:0}
+main{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;max-width:calc(520px + var(--gut) + var(--gut-r));
+padding:clamp(40px,11vh,104px) var(--gut-r) max(20px,env(safe-area-inset-bottom,0px)) var(--gut)}
+.name{font-size:clamp(30px,8.4vw,36px);line-height:1.08;letter-spacing:-0.024em;font-weight:400}
+.role{margin-top:12px;font-size:17px;line-height:1.45;color:var(--ink-2)}
+.tel{margin-top:6px;font-size:17px;line-height:1.45}
+.tel a{color:var(--ink-2);text-decoration:none}
+.acts{margin-top:clamp(32px,6vh,56px);display:flex;flex-direction:column;gap:12px}
+.act{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:0 20px;border:1px solid var(--ink);border-radius:8px;
+background:var(--paper);color:var(--ink);text-decoration:none;font-size:19px;letter-spacing:-0.006em;transition:background-color 140ms linear,color 140ms linear}
+.act-save{background:var(--ink);color:var(--paper)}
+.act:active{background:var(--ink);color:var(--paper);transition:none}
+.act-save:active{background:var(--ink-2);border-color:var(--ink-2)}
+.g{width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.hint{margin:-2px 0 2px;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.more{margin-top:auto;padding-top:32px;font-size:16px}
+.more a{display:inline-flex;align-items:center;gap:7px;min-height:44px;color:var(--ink-2);text-decoration:none}
+.more .g{width:12px;height:12px;color:var(--gray)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+.act:focus-visible{outline-offset:2px;border-radius:8px}
+</style>
+</head>
+<body>
+<main>
+<h1 class="name">Njenga Kariuki</h1>
+<p class="role">Managing Executive: AI<br>M-PESA Africa</p>
+<p class="tel" id="tel" hidden><a id="tel-a" href="#"></a></p>
+<nav class="acts" aria-label="Contact">
+<a class="act act-save" id="save" href="njenga-kariuki.vcf"><span>Save contact</span><svg class="g" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 3v8M3 7h8"/></svg></a>
+<p class="hint" id="hint" hidden>Then open the downloaded file.</p>
+<a class="act" id="wa" href="https://wa.me/" rel="noopener" hidden><span>WhatsApp</span><svg class="g" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 9.5 9.5 4.5M5.5 4.5h4v4"/></svg></a>
+<a class="act" href="https://www.linkedin.com/in/njengakariuki/" rel="me noopener"><span>LinkedIn</span><svg class="g" viewBox="0 0 14 14" aria-hidden="true"><path d="M4.5 9.5 9.5 4.5M5.5 4.5h4v4"/></svg></a>
+</nav>
+<p class="more"><a href="https://njenga.ai/"><span>njenga.ai</span><svg class="g" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7.5 3.5 11 7l-3.5 3.5"/></svg></a></p>
+</main>
+<script>
+/* This page and its repository hold no phone number.
+   The QR code on Njenga's phone carries the number in the part of the address after "#". A browser never sends that part to a server.
+   With it, this script adds the number, the WhatsApp button, and a contact card that includes the number.
+   Without it (the plain address), the page offers the card without a number, LinkedIn and the site. */
+(function () {
+  var d = document, save = d.getElementById("save"), hint = d.getElementById("hint");
+  var code = (location.hash || "").slice(1);
+  var n = /^[0-9a-z]{6,11}$/.test(code) ? parseInt(code, 36) : NaN;
+  var digits = isFinite(n) ? String(n) : "";
+  var full = digits.length >= 10 && digits.length <= 15 && n.toString(36) === code;
+  if (full) {
+    var telA = d.getElementById("tel-a"), wa = d.getElementById("wa");
+    telA.href = "tel:+" + digits;
+    telA.textContent = "+" + digits.replace(/(\d{3})(?=\d)/g, "$1 ");
+    d.getElementById("tel").hidden = false;
+    wa.href = "https://wa.me/" + digits + "?text=" + encodeURIComponent("Hello, we met at Africa Tech Festival. This is ");
+    wa.hidden = false;
+    var card = ["BEGIN:VCARD", "VERSION:3.0", "N:Kariuki;Njenga;;;", "FN:Njenga Kariuki", "ORG:M-PESA Africa", "TITLE:Managing Executive: AI", "TEL;TYPE=CELL:+", "EMAIL;TYPE=INTERNET:njenga@alumni.stanford.edu", "URL:https://www.linkedin.com/in/njengakariuki/", "URL:https://njenga.ai/", "NOTE:Met at Africa Tech Festival in Cape Town. November 2026.", "END:VCARD"];
+    card[6] += digits;
+    save.href = "data:text/vcard;charset=utf-8," + encodeURIComponent(card.join("\r\n") + "\r\n");
+    save.setAttribute("download", "Njenga Kariuki.vcf");
+  }
+  /* The card with the number arrives as a download. Android also downloads the plain card. One line says what to do next. */
+  var android = /Android/i.test(navigator.userAgent);
+  save.addEventListener("click", function () { if (full || android) hint.hidden = false; });
+})();
+</script>
+</body>
+</html>
